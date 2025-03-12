@@ -1,5 +1,23 @@
-.swiper {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
     width: 600px;
+}
+
+.swiper-slide img {
     height: 300px;
-  }
-  
+    width: 100%;
+    filter: brightness(40%)
+}
+.swiper-slide-active img {
+    filter: none
+}
+.swiper {
+    width: 100%;
+}
+.swiper-button-prev, .swiper-button-next {
+    margin: 0 600px;
+}
