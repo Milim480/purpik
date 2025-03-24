@@ -325,7 +325,7 @@ button:active{
 
 .swiper-button-prev,
 .swiper-button-next {
-    margin: -30px 485px;
+    margin: -80px 510px;
     color: #2C2B29;
 }
 
@@ -342,7 +342,8 @@ button:active{
     width: 20px;
     border-radius: 20px;
 }
-.swiper-slide .slider-title {
+
+.slider-title {
     font-size: 24px;
     font-family: "Montserrat";
     font-weight: 600;
