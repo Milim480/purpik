@@ -358,3 +358,9 @@ button:active{
     margin: 16px 0;
 }
 
+.contact-items {
+    margin-top: 50px;
+    display: flex;
+    gap: 16px
+}
+
