@@ -342,14 +342,14 @@ button:active{
     width: 20px;
     border-radius: 20px;
 }
-.swiper-slide p:first-of-type {
+.swiper-slide p:first-child {
     font-size: 24px;
     font-family: "Montserrat";
     font-weight: 600;
     color: #2C2B29;
 }
 
-.swiper-slide p:nth-child(2) {
+.swiper-slide p:last-child {
     font-family: "Montserrat";
     font-weight: 600;
     color: #7D7D7D;
