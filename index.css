@@ -3,21 +3,372 @@
     margin: 0;
 }
 
-.swiper .swiper-wrapper .swiper-slide {
-    width: 600px;
+main {
+    Display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 0px 136px
+}
+
+/* Стили */
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: #2C2B29;
+    font-family: "Unbounded";
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 28px;
+    }
+
+a, p, li, .portfoliobut {
+    font-family: "Montserrat";
+    color: #2C2B29;
+}
+
+a {
+    text-decoration: none
+}
+
+button {
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+/* Шапка сайта */
+
+header {
+    background-color: #2C2B29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 70px;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* Начало страницы */
+
+.Hero h1 {
+    font-size: 125px;
+    text-wrap: wrap;
+    max-width: 1000px;
+}
+
+.Hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 155px 0px 170px 0
+}
+
+ /* О нас */
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.Aboutcount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Aboutcount h3 {
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: #2C2B29;
+    font-size: 183px;
+    border-bottom: 1px SOLID #2C2B29;
+    line-height: 175px;
+}
+
+.Aboutcount p {
+    text-align: center;
+    text-wrap: wrap;
+    max-width: 220px;
+    margin-top: 15px;
+
+}
+
+ /* Партнеры */
+
+.Partnerlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Миссия */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h4 {
+font-size: 28px;
+margin: 20px 0px 20px 0px;
+}
+
+/* Новости */
+
+
+.new {
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+}
+
+.news{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    width: auto;
+}
+
+.imgnews img{
+    height: 385px;
+    width: 100%;
+}
+
+.news p{
+    text-wrap: wrap;
+}
+
+.newsdate {
+    color: #7D7D7D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.newsabout {
+    color: #2C2B29;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.newslink {
+    color: #2C2B29;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btnnews {
+    display: flex;
+    justify-content: center;
+}
+
+/* Форма */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+}
+
+.number p {
+    font-size: 40px;
+    font-weight: 600;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  
+
+}
+
+form input {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #7D7D7D;
+    background-color: #E3E3E3;
+    width: 686px;
+    height: 80px;
+    padding-left: 28px;
+    border: none;
+}
+
+.formbutton{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.feedback p {
+    color: #7D7D7D;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: wrap;
+    width: 686px;
+    height: 34px; 
+    margin-top: 24px;
+}
+
+.feedback a {
+    color: #7D7D7D;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: wrap;
+    width: 686px;
+    height: 34px; 
+    margin-top: 24px;
+    cursor: pointer;
+    border-bottom: 1px SOLID #7D7D7D;
+}
+
+/* Кнопки */
+
+.btn {
+    border: 1px SOLID #2C2B29;
+    background-color: #2C2B29;
+    color: #FFFFFF;
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.btn:hover {
+background-color: #FFFFFF;
+color: #2C2B29;
+}
+
+.btn2 {
+    border: 1px SOLID #2C2B29;
+    background-color: #2C2B29;
+    color: #FFFFFF;
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn2:hover {
+background-color: #FFFFFF;
+color: #2C2B29;
+}
+
+.btn3 {
+    border: 1px SOLID #2C2B29;
+    background-color: #2C2B29;
+    color: #FFFFFF;
+    width: 300px;
+    height: 58px;
+    font-size: 18px;
+}
+
+.btn3:hover {
+background-color: #FFFFFF;
+color: #2C2B29;
+}
+
+.btn4{
+    background-color: #FFFFFF;
+    color: #2C2B29;
+    font-size: 16px;
+    padding: 9px 16px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button:active{
+    border-style: inherit;
+}
+
+/* Портфолио */
+  
+.swiper {
+    width: 100%;
+
+
 }
 
 .swiper-slide img {
     height: 300px;
     width: 100%;
-    filter: brightness(40%)
+    filter: brightness(40%);
+    justify-content: space-between;
 }
+
 .swiper-slide-active img {
     filter: none
 }
-.swiper {
-    width: 100%;
+
+.swiper-button-prev,
+.swiper-button-next {
+    margin: -80px 490px;
+    color: #2C2B29;
 }
-.swiper-button-prev, .swiper-button-next {
-    margin: 0 600px;
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    position: relative;
+    z-index: 9999;
 }
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2C2B29;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.slider-title {
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #2C2B29;
+}
+
+.swiper-slide p:last-child {
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #7D7D7D;
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.contact-items {
+    margin-top: 50px;
+    display: flex;
+    gap: 16px
+}
+
+/*Команда */
+
+
+/*Страница соглашения */
