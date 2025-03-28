@@ -48,15 +48,12 @@ button {
 
 header {
     background-color: #2C2B29;
-    
-    position: fixed;
-    width: 100vw;
-}
-header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 70px;
+    position: fixed;
+    width: calc(100% - 140px);
 }
 
 header a {
