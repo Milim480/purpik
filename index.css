@@ -54,6 +54,7 @@ header {
     padding: 12px 70px;
     position: fixed;
     width: calc(100% - 140px);
+    z-index: 9999999
 }
 
 header a {
