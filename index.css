@@ -54,7 +54,12 @@ header {
     padding: 12px 70px;
     position: fixed;
     width: calc(100% - 140px);
-    z-index: 9999999
+    z-index: 9999999;
+    transition-duration: 0.2s;
+}
+header.hidden {
+    transform: translateY(-73px);
+    transition-duration: 0.2s;
 }
 
 header a {
