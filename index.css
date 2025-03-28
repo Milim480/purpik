@@ -23,6 +23,7 @@ h6 {
 
 h2 {
     font-size: 50px;
+    margin: 25px 0;
 }
 
 p {
@@ -51,6 +52,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 70px;
+    position: fixed;
+    width: 100vw;
 }
 
 header a {
@@ -135,6 +138,17 @@ li {
 h4 {
 font-size: 28px;
 margin: 20px 0px 20px 0px;
+}
+
+.TabInfo {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.NameTabInfo {
+    display: flex;
+    justify-content: center;
 }
 
 /* Новости */
