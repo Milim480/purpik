@@ -23,15 +23,23 @@ h6 {
 
 h2 {
     font-size: 50px;
+    margin: 25px 0;
 }
 
 p {
     font-size: 28px;
-    }
+}
 
-a, p, li, .portfoliobut {
+a,
+p,
+li,
+.portfoliobut {
     font-family: "Montserrat";
     color: #2C2B29;
+}
+
+a {
+    text-decoration: none
 }
 
 button {
@@ -47,6 +55,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 70px;
+    position: fixed;
+    width: calc(100% - 140px);
+    z-index: 9999999;
+    transition-duration: 0.2s;
+}
+
+header.hidden {
+    transform: translateY(-73px);
+    transition-duration: 0.2s;
 }
 
 header a {
@@ -72,10 +89,10 @@ header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 155px 0px 170px 0
+    margin: 155px 0px 210px 0
 }
 
- /* О нас */
+/* О нас */
 
 .conteiner {
     display: flex;
@@ -105,7 +122,7 @@ header nav {
 
 }
 
- /* Партнеры */
+/* Партнеры */
 
 .Partnerlogo {
     display: flex;
@@ -129,8 +146,19 @@ li {
 }
 
 h4 {
-font-size: 28px;
-margin: 20px 0px 20px 0px;
+    font-size: 28px;
+    margin: 20px 0px 20px 0px;
+}
+
+.TabInfo {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.NameTabInfo {
+    display: flex;
+    justify-content: center;
 }
 
 /* Новости */
@@ -142,19 +170,19 @@ margin: 20px 0px 20px 0px;
     justify-content: space-between;
 }
 
-.news{
+.news {
     display: flex;
     gap: 24px;
     flex-direction: column;
     width: auto;
 }
 
-.imgnews img{
+.imgnews img {
     height: 385px;
     width: 100%;
 }
 
-.news p{
+.news p {
     text-wrap: wrap;
 }
 
@@ -199,10 +227,11 @@ margin: 20px 0px 20px 0px;
     font-size: 40px;
     font-weight: 600;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    gap: 24px;  
+    gap: 24px;
 
 }
 
@@ -217,7 +246,7 @@ form input {
     border: none;
 }
 
-.formbutton{
+.formbutton {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
@@ -230,7 +259,7 @@ form input {
     font-weight: 500;
     text-wrap: wrap;
     width: 686px;
-    height: 34px; 
+    height: 34px;
     margin-top: 24px;
 }
 
@@ -240,7 +269,7 @@ form input {
     font-weight: 500;
     text-wrap: wrap;
     width: 686px;
-    height: 34px; 
+    height: 34px;
     margin-top: 24px;
     cursor: pointer;
     border-bottom: 1px SOLID #7D7D7D;
@@ -258,8 +287,8 @@ form input {
 }
 
 .btn:hover {
-background-color: #FFFFFF;
-color: #2C2B29;
+    background-color: #FFFFFF;
+    color: #2C2B29;
 }
 
 .btn2 {
@@ -273,8 +302,8 @@ color: #2C2B29;
 }
 
 .btn2:hover {
-background-color: #FFFFFF;
-color: #2C2B29;
+    background-color: #FFFFFF;
+    color: #2C2B29;
 }
 
 .btn3 {
@@ -287,11 +316,11 @@ color: #2C2B29;
 }
 
 .btn3:hover {
-background-color: #FFFFFF;
-color: #2C2B29;
+    background-color: #FFFFFF;
+    color: #2C2B29;
 }
 
-.btn4{
+.btn4 {
     background-color: #FFFFFF;
     color: #2C2B29;
     font-size: 16px;
@@ -300,12 +329,12 @@ color: #2C2B29;
     border-style: none;
 }
 
-button:active{
+button:active {
     border-style: inherit;
 }
 
 /* Портфолио */
-  
+
 .swiper {
     width: 100%;
 
@@ -315,7 +344,7 @@ button:active{
 .swiper-slide img {
     height: 300px;
     width: 100%;
-    filter: brightness(30%);
+    filter: brightness(40%);
     justify-content: space-between;
 }
 
@@ -325,15 +354,20 @@ button:active{
 
 .swiper-button-prev,
 .swiper-button-next {
-    margin: -80px 510px;
+    margin: -80px 490px;
     color: #2C2B29;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     position: relative;
     z-index: 9999;
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-top: 30px;
 }
 
@@ -363,4 +397,49 @@ button:active{
     display: flex;
     gap: 16px
 }
+
+/*Команда */
+
+
+/*Страница соглашения */
+
+.Agreement {
+    margin: 155px 0px 170px 0
+}
+
+.lawinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.lawinfo h3 {
+    margin-top: 50px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: #2C2B29;
+    font-size: 45px;
+    border-bottom: 1px SOLID #2C2B29;
+    line-height: 70px;
+}
+
+
+/*Страница Портфолио*/
+
+.portfolio {
+    margin: 155px 0px 0px 0
+}
+
+.filter {
+    display: flex;
+    gap: 16px;
+
+}
+
+.ourworks{
+
+}
+
+
 
