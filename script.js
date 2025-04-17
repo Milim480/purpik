@@ -1,41 +1,30 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+const SwiperConfig = {
     loop: true,
-    slidesPerView: 3,
     spaceBetween: 100,
-    centeredSlides: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  const swiper2 = new Swiper('.swiper2', {
-    loop: true,
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 100,
-    centeredSlides: false,
     
     pagination: {
-        el: '.swiper2-pagination',
+        el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true
     },
 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-});
+}
+
+const swiper1 = new Swiper('.swiper1', {
+  ...SwiperConfig,
+  centeredSlides: true,
+  slidesPerView: 3,
+})
+
+const swiper2 = new Swiper('.swiper2', {
+  ...SwiperConfig,
+  slidesPerView: 2,
+  centeredSlides: false,
+  slidesPerGroup: 2
+})
 
   let lastScrollTop = 0;
    const header = document.querySelector('header');
