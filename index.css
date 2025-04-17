@@ -330,6 +330,35 @@ button:active {
 
 /* Портфолио */
 
+.swiper1 .swiper-slide-active img:hover {
+    transform: scale(1.05) translate(0, 10px);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* настройки swiper2 анимации при наведении
+
+.swiper2 .swiper-slide-active img:hover {
+    transform: translate(10px, 10px);
+}
+
+.swiper1 .swiper-slide-next img:hover {
+    transform: translate(-10px, 10px);
+} */
+
+.swiper1 .swiper-slide-active  img:hover ~ .text-container {
+    transition-duration: 0.5s;
+    transform: translate(0, 20px);
+}
+.swiper1 .swiper-slide-active .text-container {
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.swiper-slide img {
+    transition-duration: 0.5s;
+}
+
 .swiper1 {
   width: 100%;
   overflow: hidden;
