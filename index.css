@@ -400,6 +400,58 @@ button:active {
 
 /*Команда */
 
+.swiper2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper2 .swiper-slide {
+    flex-direction: column;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    width: calc(50% - 50px);
+}
+
+.swiper2 .swiper-slide-active,
+.swiper2 .swiper-slide-next {
+    opacity: 1;
+}
+
+.swiper2 .swiper-slide img {
+    height: auto;
+    width: 100%;
+    max-height: 450px;
+    filter: brightness(40%);
+}
+
+.swiper2 .swiper-slide-active img,
+.swiper2 .swiper-slide-next img {
+    filter: none;
+}
+
+.swiper2 .text-container {
+    padding: 20px 0;
+}
+
+.swiper2 .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+}
+
+.swiper2 .swiper-pagination-bullet-active {
+    background-color: #2C2B29;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.swiper2 .swiper2-button-prev,
+.swiper2 .swiper2-button-next {
+    color: #e21414;
+    
+    
+}
+
+
 
 /*Страница соглашения */
 
@@ -424,6 +476,24 @@ button:active {
     line-height: 70px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%; 
+  }
+
+  th, td {
+    border: 1px solid #2C2B29; 
+    padding: 8px; 
+    text-align: left;
+    font-family: "Montserrat";
+    font-size: 28px;
+  }
+
+  th, td li {
+    font-size: 29px;
+    margin: 0px;
+    padding: 10px;
+  }
 
 /*Страница Портфолио*/
 

@@ -18,25 +18,24 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
-const swiper2 = new Swiper('.swiper2', {
-    // Optional parameters
+  const swiper2 = new Swiper('.swiper2', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
     spaceBetween: 100,
-    centeredSlides: true,
-  
-    // If we need pagination
+    centeredSlides: false,
+    
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper2-pagination',
+        clickable: true,
+        dynamicBullets: true
     },
-  
-    // Navigation arrows
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  });
+});
 
   let lastScrollTop = 0;
    const header = document.querySelector('header');
