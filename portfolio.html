@@ -26,7 +26,7 @@
 
 <body>
   <header>
-    <a href=""><svg width="41" height="45" viewBox="0 0 41 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="./index.html"><svg width="41" height="45" viewBox="0 0 41 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M13.9893 41.4409L19.8841 44.9536L19.9721 45V28.9707L20.0601 27.8291L20.1481 27.0387L20.2361 26.2484C20.5176 23.4382 22.0544 21.6233 22.7876 21.0671L24.4592 19.8376L41 10.3533L25.427 1.48361L23.7554 0.693246C21.2215 -0.641592 18.0658 0.254154 16.8047 0.868882L16.2768 1.13234L4.57511 7.71871L3.16738 8.59689L2.37554 9.21162C0.61588 10.5465 0.0586552 13.6318 0 15.0076V15.7102V29.4098L0.0879828 30.2002C0.299142 32.1673 1.81831 34.0642 2.5515 34.7667L3.78326 35.7327L4.92704 36.3923C4.89772 31.4303 4.85666 20.8563 4.92704 18.2569C4.99743 15.6575 6.30544 13.9538 6.95065 13.4269L7.65451 12.8122L8.53434 12.1096L9.2382 11.6705L19.5322 5.61107L28.6824 10.8802L17.5086 17.3787L16.5408 18.0813L15.9249 18.6082C14.306 19.8025 13.9599 22.6185 13.9893 23.8773V41.4409Z"
           fill="white" />
@@ -37,7 +37,7 @@
     </a>
     <nav>
       <a href="./index.html#AboutUs">О нас</a>
-      <a href="./index.html#Portfolio">Портфолио</a>
+      <a href="./portfolio.html">Портфолио</a>
       <a href="#">Команда</a>
       <a href="./index.html#News">Новостная лента</a>
       <a href="./index.html#Form"><button class="btn4">Предложить проект</button></a>
@@ -46,48 +46,72 @@
   <main>
     <section class="portfolio">
       <h2 id="Portfolio">Избранные проекты</h2>
-      <div class="swiper">
+      <div class="swiper1">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <img src="./assets/slider1.png" alt="slide 1" />
-            <p class="slider-title">Разработка концепции комфортного общественного пространства</p>
-            <p>г. Светлогорск</p>
+            <div class="text-container">
+              <p class="slider-title">
+                Разработка концепции комфортного общественного пространства
+              </p>
+              <p>г. Светлогорск</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="./assets/slider1.png" alt="slide 2" />
-            <p class="slider-title">Разработка концепции комфортного общественного пространства</p>
-            <p>г. Краснознаменск</p>
+            <div class="text-container">
+              <p class="slider-title">
+                Разработка концепции комфортного общественного пространства
+              </p>
+              <p>г. Краснознаменск</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="./assets/slider1.png" alt="slide 3" />
-            <p class="slider-title">Разработка концепции комфортного общественного пространства</p>
-            <p>г. Светлогорск</p>
+            <div class="text-container">
+              <p class="slider-title">
+                Разработка концепции комфортного общественного пространства
+              </p>
+              <p>г. Светлогорск</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="./assets/slider1.png" alt="slide 3" />
-            <p class="slider-title">Разработка концепции комфортного общественного пространства</p>
-            <p>г. Краснознаменск</p>
+            <div class="text-container">
+              <p class="slider-title">
+                Разработка концепции комфортного общественного пространства
+              </p>
+              <p>г. Краснознаменск</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="./assets/slider1.png" alt="slide 3" />
-            <p class="slider-title">Разработка концепции комфортного общественного пространства</p>
-            <p>г. Светлогорск</p>
+            <div class="text-container">
+              <p class="slider-title">
+                Разработка концепции комфортного общественного пространства
+              </p>
+              <p>г. Светлогорск</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="./assets/slider1.png" alt="slide 3" />
-            <p class="slider-title">Разработка концепции комфортного общественного пространства</p>
-            <p>г. Краснознаменск</p>
+            <div class="text-container">
+              <p class="slider-title">
+                Разработка концепции комфортного общественного пространства
+              </p>
+              <p>г. Краснознаменск</p>
+            </div>
           </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
-
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+      </div>
     </section>
     <section class="ourworks">
       <h2>Все проекты и исследования</h2>
@@ -99,15 +123,16 @@
         <button class="btn">Дата</button>
       </div>
       <div class="works">
-        
+
 
       </div>
 
 
     </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-</div>
+  </div>
 </body>
+
 </html>
