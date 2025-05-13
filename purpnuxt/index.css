@@ -1,0 +1,650 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 0px 136px;
+}
+
+/* Стили */
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: #2c2b29;
+    font-family: "Unbounded";
+}
+
+h2 {
+    font-size: 50px;
+    margin: 25px 0;
+}
+
+p {
+    font-size: 28px;
+}
+
+a,
+p,
+li,
+.portfoliobut {
+    font-family: "Montserrat";
+    color: #2c2b29;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+/* Шапка сайта */
+
+header {
+    background-color: #2c2b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 70px;
+    position: fixed;
+    width: calc(100% - 140px);
+    z-index: 9999999;
+    transition-duration: 0.2s;
+}
+
+header.hidden {
+    transform: translateY(-73px);
+    transition-duration: 0.2s;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* Начало страницы */
+
+.Hero h1 {
+    font-size: 125px;
+    text-wrap: wrap;
+    max-width: 1000px;
+}
+
+.Hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 0px 225px 0;
+    padding-top: 210px;
+}
+
+/* О нас */
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.Aboutcount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Aboutcount h3 {
+    font-family: "Bebas";
+    text-align: center;
+    color: #2c2b29;
+    font-size: 183px;
+    border-bottom: 1px SOLID #2c2b29;
+    line-height: 175px;
+}
+
+.Aboutcount p {
+    text-align: center;
+    text-wrap: wrap;
+    max-width: 220px;
+    margin-top: 15px;
+}
+
+.wtfdesign { font-family: "Bebas Neue";
+}/* Это плюсик лол, он в другом шрифте на макете */
+
+/* Партнеры */
+
+.Partnerlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Миссия */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 28px;
+    margin: 20px 0px 20px 0px;
+}
+
+.TabInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NameTabInfo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Новости */
+
+.new {
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+}
+
+.news {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    width: auto;
+}
+
+.news .imgnews img:hover {
+    transform: scale(1.05) translate(0, 10px);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imgnews:hover ~ .text-container {
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+
+.imgnews:hover ~ .text-container {
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+.imgnews img {
+    height: 385px;
+    width: 100%;
+}
+
+.news p {
+    text-wrap: wrap;
+}
+
+.newsdate {
+    color: #7d7d7d;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.newsabout {
+    color: #2c2b29;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.newslink {
+    color: #2c2b29;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btnnews {
+    display: flex;
+    justify-content: center;
+}
+
+.newspage {
+    margin-top: 155px;
+}
+
+/* Форма */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+}
+
+.number p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form input {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #7d7d7d;
+    background-color: #e3e3e3;
+    width: 686px;
+    height: 80px;
+    padding-left: 28px;
+    border: none;
+}
+
+.formbutton {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.feedback p {
+    color: #7d7d7d;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: wrap;
+    width: 686px;
+    height: 34px;
+    margin-top: 24px;
+}
+
+.feedback a {
+    color: #7d7d7d;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: wrap;
+    width: 686px;
+    height: 34px;
+    margin-top: 24px;
+    cursor: pointer;
+    border-bottom: 1px SOLID #7d7d7d;
+}
+
+/* Кнопки */
+
+.btn {
+    border: 1px SOLID #2c2b29;
+    background-color: #2c2b29;
+    color: #ffffff;
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #2c2b29;
+}
+
+.btn2 {
+    border: 1px SOLID #2c2b29;
+    background-color: #2c2b29;
+    color: #ffffff;
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    background-color: #ffffff;
+    color: #2c2b29;
+}
+
+.btn3 {
+    border: 1px SOLID #2c2b29;
+    background-color: #2c2b29;
+    color: #ffffff;
+    width: 300px;
+    height: 58px;
+    font-size: 18px;
+}
+
+.btn3:hover {
+    background-color: #ffffff;
+    color: #2c2b29;
+}
+
+.btn4 {
+    background-color: #ffffff;
+    color: #2c2b29;
+    font-size: 16px;
+    padding: 9px 16px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button:active {
+    border-style: inherit;
+}
+
+/* Портфолио */
+
+.swiper1 .swiper-slide-active img:hover {
+    transform: scale(1.05) translate(0, 10px);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* настройки swiper2 анимации при наведении
+
+.swiper2 .swiper-slide-active img:hover {
+    transform: translate(10px, 10px);
+}
+
+.swiper1 .swiper-slide-next img:hover {
+    transform: translate(-10px, 10px);
+} */
+
+.swiper1 .swiper-slide-active img:hover~.text-container {
+    transition-duration: 0.5s;
+    transform: translate(0, 20px);
+}
+
+.swiper1 .swiper-slide-active .text-container {
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    transition-duration: 0.5s;
+}
+
+.swiper1 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper1 .swiper-slide img {
+    height: 300px;
+    width: 100%;
+    filter: brightness(40%);
+    justify-content: space-between;
+}
+
+.swiper1 .swiper-slide-active img {
+    filter: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    margin: -80px 490px;
+    color: #2c2b29;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position: relative;
+    z-index: 9999;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2c2b29;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.slider-title {
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #2c2b29;
+}
+
+.swiper-slide p:last-child {
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #7d7d7d;
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.contact-items {
+    margin-top: 50px;
+    display: flex;
+    gap: 16px;
+}
+
+/*Команда */
+
+.swiper2 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.swiper2 .swiper-slide {
+    flex-direction: column;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.swiper2 .swiper-slide-active,
+.swiper2 .swiper-slide-next {
+    opacity: 1;
+}
+
+
+.swiper2 .swiper-slide-active {
+    padding-left: 180px;
+}
+
+.swiper2 .swiper-slide img {
+    height: auto;
+    width: auto;
+    filter: brightness(40%);
+    max-height: 450px;
+}
+
+.swiper2 .swiper-slide-active img,
+.swiper2 .swiper-slide-next img {
+    filter: none;
+}
+
+.swiper2 .text-container {
+    text-align: center;
+    padding: 20px 0;
+    width: 450px;
+}
+
+.swiper2 .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+}
+
+.swiper2 .swiper-pagination-bullet-active {
+    background-color: #2c2b29;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.swiper2 .swiper-button-prev,
+.swiper2 .swiper-button-next {
+    color: #2c2b29;
+    margin: -80px 40px;
+    
+}
+
+/*Страница соглашения */
+
+.Agreement {
+    margin: 155px 0px 170px 0;
+
+}
+
+.lawinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lawinfo h3 {
+    margin-top: 50px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: #2c2b29;
+    font-size: 45px;
+    border-bottom: 1px SOLID #2c2b29;
+    line-height: 70px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #2c2b29;
+    padding: 8px;
+    text-align: left;
+    font-family: "Montserrat";
+    font-size: 28px;
+}
+
+th,
+td li {
+    font-size: 29px;
+    margin: 0px;
+    padding: 10px;
+}
+
+/* Страница Портфолио и проекта */
+
+.portfolio {
+    margin: 155px 0px 0px 0;
+}
+
+.filter {
+    display: flex;
+    gap: 20px;
+}
+
+
+.HeroProjekt{
+    display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-right: 120px;
+
+}
+
+.Nameprojet {
+    width: 80%;
+}
+
+
+.table-container table {
+    font-family: "Montserrat";
+}
+
+.table-container th, .table-container td {
+    padding: 15px;
+    text-align: left;
+    font-size: 24px;
+    border-left: none;
+    border-right: none;
+
+}
+
+.table-container tr td:first-child {
+    font-weight: 600;
+  }
+
+.countdescript {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.countdescript h3 {
+    font-family: "Bebas";
+    text-align: left;
+    color: #2c2b29;
+    font-size: 64px;
+    padding-top: 30px;
+    letter-spacing: 4px;
+}
+
+.countdescript p {
+    text-align: left;
+    text-wrap: wrap;
+    border-top: 1px SOLID #2c2b29;
+    max-width: 300px;
+    margin-top: 12px;
+}
+
+.textdescriptbottom p {
+    font-size: 20px;
+}
+
+.textdescripttop {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteinertopdescript {
+    display: flex;
+    gap: 120px
+}
+
+.conteinertopdescript h2 {
+    margin: 0px;
+}
+
+
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('/fonts/BebasNeueCyrillic.woff') format('woff');
+}
